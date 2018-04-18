@@ -33,7 +33,8 @@ puts "Please enter your move (1-9): "
 user_input=gets.strip
 position=input_to_index(user_input)
 if (valid_move?(board,position))
-  move(board,position,token="X")
+  token=current_player(board)
+  move(board,position,token)
   display_board(board)
 else
   turn(board)
@@ -80,8 +81,7 @@ end
 end
 
 def play(board)
-while !over?(board)
-token=current_player(board)
+until over?(board)
 turn(board)
 end
   if won?(board)
