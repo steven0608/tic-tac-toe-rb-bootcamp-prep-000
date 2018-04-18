@@ -83,10 +83,10 @@ def play(board)
 while !over?(board)
 token=current_player(board)
 turn(board)
+end
   if won?(board)
   puts "Congratulations #{winner(board)!}"
   elsif draw?(board)
     print "cat's Game!"
   end
-end
 end
