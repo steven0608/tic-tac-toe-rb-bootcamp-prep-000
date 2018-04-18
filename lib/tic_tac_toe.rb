@@ -87,14 +87,5 @@ end
   puts "congratulates the winner #{winner(board)}"
   elsif draw?(board)
     print "cat's Game!"
-  end    
+  end
 end
-
-
-
-
-
-
-
-
-
