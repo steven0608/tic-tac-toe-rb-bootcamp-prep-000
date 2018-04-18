@@ -78,3 +78,23 @@ if won?(board)
 return board[won?(board)[0]]
 end
 end
+
+def play(board)
+turn(board)
+until over?(board)
+end
+  if won?(board)
+  puts "congratulates the winner #{winner(board)}"
+  elsif draw?(board)
+    print "cat's Game!"
+  end    
+end
+
+
+
+
+
+
+
+
+
