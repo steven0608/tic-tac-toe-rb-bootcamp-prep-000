@@ -1,4 +1,17 @@
 
+def play(board)
+while !over?(board)
+token=current_player(board)
+turn(board)
+end
+  if won?(board)
+  puts "congratulates the winner #{winner(board)}"
+  elsif draw?(board)
+    print "cat's Game!"
+  end
+end
+
+
 WIN_COMBINATIONS=[
   [0,1,2],[3,4,5],[6,7,8],
   [0,3,6],[1,4,7],[2,5,8],
@@ -79,14 +92,4 @@ return board[won?(board)[0]]
 end
 end
 
-def play(board)
-while !over?(board)
-token=current_player(board)
-turn(board)
-end
-  if won?(board)
-  puts "congratulates the winner #{winner(board)}"
-  elsif draw?(board)
-    print "cat's Game!"
-  end
-end
+
