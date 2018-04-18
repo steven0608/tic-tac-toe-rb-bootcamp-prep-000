@@ -80,9 +80,9 @@ end
 end
 
 def play(board)
+until over?(board)
 token=current_player(board)
 turn(board)
-until over?(board)
 end
   if won?(board)
   puts "congratulates the winner #{winner(board)}"
