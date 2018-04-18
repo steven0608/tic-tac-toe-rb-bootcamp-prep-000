@@ -80,7 +80,7 @@ end
 end
 
 def play(board)
-until over?(board)
+while !over?(board)
 token=current_player(board)
 turn(board)
 end
