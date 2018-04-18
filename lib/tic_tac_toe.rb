@@ -86,9 +86,9 @@ turn(board)
 end
 if over?(board)
   if won?(board)
-  puts "Congratulations #{winner(board)!}"
+  puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
-    print "cat's Game!"
+    puts "cat's Game!"
   end
 end
 end
