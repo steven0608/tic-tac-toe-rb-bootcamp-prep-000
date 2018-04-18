@@ -80,6 +80,7 @@ end
 end
 
 def play(board)
+token=current_player(board)
 turn(board)
 until over?(board)
 end
