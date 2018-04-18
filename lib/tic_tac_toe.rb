@@ -85,7 +85,7 @@ token=current_player(board)
 turn(board)
 end
   if won?(board)
-  puts "congratulates the winner #{winner(board)}"
+  puts "Congratulations #{winner(board)!}"
   elsif draw?(board)
     print "cat's Game!"
   end
